@@ -12,4 +12,9 @@ export const GlobalStyles = createGlobalStyle`
             font-family: ${theme.fonts.mainFont};
         `}
     }
+    p{
+        ${({theme})=> css`
+            font-family: ${theme.fonts.secondaryFont};
+        `}
+    }
 `

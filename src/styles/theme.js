@@ -4,7 +4,8 @@ export const theme = {
         secondaryBg: '#0066CC'
     },
     fonts:{
-        mainFont:'courrier'
+        mainFont:'courrier',
+        secondaryFont:'Helvetica'
     }
     
 };
