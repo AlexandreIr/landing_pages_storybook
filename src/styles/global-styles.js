@@ -17,4 +17,9 @@ export const GlobalStyles = createGlobalStyle`
             font-family: ${theme.fonts.secondaryFont};
         `}
     }
+    h2{
+        ${({theme})=> css`
+            font-family: ${theme.fonts.thirdFont};
+        `}
+    }
 `

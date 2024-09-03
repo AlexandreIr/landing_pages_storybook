@@ -8,5 +8,6 @@ export const Wrapper = styled.div`
         grid-template-columns: 2 1fr;
         font-size: 1.5rem;
         color: white;
+        width: 100%;
         `}
 `;

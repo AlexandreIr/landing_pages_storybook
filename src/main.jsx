@@ -6,6 +6,7 @@ import { GlobalStyles } from './styles/global-styles'
 import { ThemeProvider } from 'styled-components'
 import { theme } from './styles/theme'
 
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
