@@ -28,14 +28,16 @@ const titleBgColor = {
 const titleFont = {
     default:(theme)=>css`font-family: ${theme.font.family.default}`,
     secondary:(theme)=>css`font-family: ${theme.font.family.secondary}`,
+    third:(theme)=>css`font-family:${theme.font.family.third}`,
+    fourth:(theme)=>css`font-family:${theme.font.family.fourth}`
 }
 
 export const title = styled.h1`
-    ${({theme, size, upperCase, color, bgColor, fontFamily})=> css`
-        ${titleBgColor[bgColor](theme)};
+    ${({theme, size, upperCase, color, bgcolor, fontfamily})=> css`
+        ${titleFont[fontfamily](theme)};
+        ${titleBgColor[bgcolor](theme)};
         ${titleSize[size](theme)}; 
         ${titleCase(upperCase)};
         ${titleColor[color](theme)};
-        ${titleFont[fontFamily](theme)};
     `}
 `

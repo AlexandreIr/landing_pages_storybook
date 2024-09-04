@@ -19,6 +19,6 @@ Template.args = {
     as:'h1',
     size:'normal',
     upperCase:false,
-    colors:'black',
-    fontFamily:'default',
+    color:'black',
+    fontfamily:'default',
 }

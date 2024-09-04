@@ -9,6 +9,8 @@ export const theme = {
         family:{
             default:"'Open Sans', sans-serif",
             secondary: "'Montserrat', sans-serif",
+            third:"'Courier'",
+            fourth:"'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"
         },
         size:{
             xsmall:'.8rem',

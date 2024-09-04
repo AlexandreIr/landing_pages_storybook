@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import P from 'prop-types';
 
 import * as Styled from './styles';
@@ -11,16 +10,16 @@ export const Heading = ({children,
     size = 'normal', 
     upperCase = false, 
     color = 'black', 
-    bgColor = 'white',
-    fontFamily = 'default'}) =>{
+    bgcolor = 'white',
+    fontfamily = 'default'}) =>{
     return (
     <ThemeProvider theme={theme}>
         <Styled.title as={as} 
         size= {size} 
         upperCase={upperCase} 
         color={color}
-        bgColor={bgColor}
-        fontFamily={fontFamily}>
+        bgcolor={bgcolor}
+        fontfamily={fontfamily}>
             {children}
         </Styled.title>
     </ThemeProvider>
@@ -30,9 +29,9 @@ export const Heading = ({children,
 Heading.propTypes = {
     children:P.node.isRequired,
     as: P.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']).isRequired,
-    size: P.oneOf(['xsmall', 'small', 'normal', 'large', 'xlarge', 'xxlarge']).isRequired,
-    upperCase: P.bool.isRequired,
-    color: P.oneOf(['primary', 'secondary', 'white', 'black']).isRequired,
-    bgColor: P.oneOf(['primary', 'secondary', 'white', 'black']).isRequired,
-    fontFamily: P.oneOf(['default', 'secondary']).isRequired,
+    size: P.oneOf(['xsmall', 'small', 'normal', 'large', 'xlarge', 'xxlarge']),
+    upperCase: P.bool,
+    color: P.oneOf(['primary', 'secondary', 'white', 'black']),
+    bgcolor: P.oneOf(['primary', 'secondary', 'white', 'black']),
+    fontfamily: P.oneOf(['default', 'secondary', 'third', 'fourth']),
 };
