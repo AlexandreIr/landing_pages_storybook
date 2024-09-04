@@ -1,23 +1,23 @@
 export const theme = {
     colors:{
-        mainBg: 'red',
-        secondaryBg: '#0066CC',
-        thirdBg: 'green'
+        primary: '#0A1128',
+        secondary: '#dc143c',
+        white: '#FFFFFF',
+        black: '#000000'
     },
-    fonts:{
-        mainFont:'courrier',
-        secondaryFont:'Helvetica',
-        thirdFont:'Verdana',
-        fontColors:{
-            primaryFont:'black',
-            secondaryFont:'white',
-            thirdFont:'grey'
+    font:{
+        family:{
+            default:"'Open Sans', sans-serif",
+            secondary: "'Montserrat', sans-serif",
         },
         size:{
-            primary:'7rem',
-            secondary:'3rem',
-            third:'1rem'
+            xsmall:'.8rem',
+            small:'1.6rem',
+            normal:'2.4rem',
+            large:'3.2rem',
+            xlarge:'4rem',
+            xxlarge:'4.8rem'
         }
-    }
+    },
     
 };

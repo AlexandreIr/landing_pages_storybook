@@ -2,9 +2,10 @@ import styled, { css } from "styled-components";
 
 export const textComp = styled.p`
     ${({theme})=> css`
-        color: ${theme.fonts.fontColors.secondaryFont};
-        background-color: ${theme.colors.secondaryBg};
-        font-size: ${theme.fonts.size.secondary};
+        color: ${theme.colors.white};
+        background-color: ${theme.colors.secondary};
+        font-size: ${theme.font.size.normal};
+        font-family: ${theme.font.family.secondary};
     `
 
     }

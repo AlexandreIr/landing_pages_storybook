@@ -2,7 +2,7 @@ import { Heading } from ".";
 
 export default {
     title:'Heading',
-    component: <Heading/>,
+    component: Heading,
     args: {
         children:'Clique aqui',
     },
@@ -15,4 +15,10 @@ export default {
 
 export const Template = (args) => <Heading {...args}/>;
 
-
+Template.args = {
+    as:'h1',
+    size:'normal',
+    upperCase:false,
+    colors:'black',
+    fontFamily:'default',
+}

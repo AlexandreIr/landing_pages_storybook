@@ -2,7 +2,7 @@ import { Text } from ".";
 
 export default {
     title:'text',
-    component: <Text/>,
+    component: Text,
     args:{
         children: `Lorem ipsum dolor sit amet consectetur adipisicing elit. 
         Cum voluptate atque at, totam sapiente hic consectetur,
