@@ -17,7 +17,7 @@ export const Template = (args) => <Heading {...args}/>;
 
 Template.args = {
     as:'h1',
-    size:'normal',
+    size:'huge',
     upperCase:false,
     color:'black',
     fontfamily:'default',

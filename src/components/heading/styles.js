@@ -6,8 +6,17 @@ const titleSize = {
     normal: (theme) => css`font-size: ${theme.font.size.normal}`,
     large: (theme) => css`font-size: ${theme.font.size.large}`,
     xlarge: (theme) => css`font-size: ${theme.font.size.xlarge}`,
-    xxlarge: (theme) => css`font-size: ${theme.font.size.xxlarge}`
+    xxlarge: (theme) => css`font-size: ${theme.font.size.xxlarge}`,
+    huge: (theme) => css`font-size: ${theme.font.size.huge};
+        ${mediaFonts(theme)}
+    `,
 }
+
+const mediaFonts = (theme) => css`
+    @media (max-width:834px) {
+        font-size: ${theme.font.size.normal};
+    }
+`;
 
 const titleCase = (upperCase) => css`
     text-transform: ${upperCase?'uppercase':'none'};

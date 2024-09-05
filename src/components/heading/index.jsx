@@ -29,7 +29,7 @@ export const Heading = ({children,
 Heading.propTypes = {
     children:P.node.isRequired,
     as: P.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']).isRequired,
-    size: P.oneOf(['xsmall', 'small', 'normal', 'large', 'xlarge', 'xxlarge']),
+    size: P.oneOf(['xsmall', 'small', 'normal', 'large', 'xlarge', 'xxlarge', 'huge']),
     upperCase: P.bool,
     color: P.oneOf(['primary', 'secondary', 'white', 'black']),
     bgcolor: P.oneOf(['primary', 'secondary', 'white', 'black']),
