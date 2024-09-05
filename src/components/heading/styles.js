@@ -13,8 +13,9 @@ const titleSize = {
 }
 
 const mediaFonts = (theme) => css`
-    @media (max-width:834px) {
+    @media ${theme.media.tablet} {
         font-size: ${theme.font.size.normal};
+        background-color: ${theme.colors.white};
     }
 `;
 

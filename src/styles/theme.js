@@ -22,5 +22,10 @@ export const theme = {
             huge:'5.6rem',
         }
     },
+    media:{
+        tablet: '(max-width:834px)',
+        largePhone: '(max-width:414px)',
+        smallPhone: '(max-width:320px'
+    }
     
 };
