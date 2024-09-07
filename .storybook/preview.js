@@ -2,7 +2,7 @@
 const preview = {
   parameters: {
     backgrounds:{
-      default: 'dark',
+      default: 'light',
       values: [
         {
           name:'dark',
