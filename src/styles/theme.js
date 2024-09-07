@@ -26,6 +26,15 @@ export const theme = {
         tablet: '(max-width:834px)',
         largePhone: '(max-width:414px)',
         smallPhone: '(max-width:320px'
-    }
+    },
+    spacing:{
+        xsmall:'.8rem',
+        small:'1.6rem',
+        normal:'2.4rem',
+        large:'3.2rem',
+        xlarge:'4rem',
+        xxlarge:'4.8rem',
+        huge:'5.6rem',
+    },
     
 };

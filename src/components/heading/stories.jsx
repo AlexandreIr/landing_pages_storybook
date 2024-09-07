@@ -6,6 +6,9 @@ export default {
     args: {
         children:'Clique aqui',
     },
+    argTypes: {
+        children: { type: 'string' },
+    },
     parameters:{
         backgrounds:{
             default:'blue',
