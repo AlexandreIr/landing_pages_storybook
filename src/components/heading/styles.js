@@ -43,11 +43,9 @@ const titleFont = {
 }
 
 export const title = styled.h1`
-    ${({theme, size, upperCase, color, bgcolor, fontfamily})=> css`
+    ${({theme, size, upperCase, fontfamily})=> css`
         ${titleFont[fontfamily](theme)};
-        ${titleBgColor[bgcolor](theme)};
         ${titleSize[size](theme)}; 
         ${titleCase(upperCase)};
-        ${titleColor[color](theme)};
     `}
 `

@@ -9,16 +9,12 @@ export const Heading = ({children,
     as = 'h1', 
     size = 'normal', 
     upperCase = false, 
-    color = 'black', 
-    bgcolor = 'white',
     fontfamily = 'default'}) =>{
     return (
     <ThemeProvider theme={theme}>
         <Styled.title as={as} 
         size= {size} 
         upperCase={upperCase} 
-        color={color}
-        bgcolor={bgcolor}
         fontfamily={fontfamily}>
             {children}
         </Styled.title>

@@ -26,7 +26,7 @@ export const theme = {
     media:{
         tablet: '(max-width:834px)',
         largePhone: '(max-width:414px)',
-        smallPhone: '(max-width:320px'
+        smallPhone: '(max-width:320px)'
     },
     spacing:{
         xsmall:'.8rem',
