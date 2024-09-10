@@ -2,8 +2,14 @@ import styled, { css } from 'styled-components';
 import {Container as SectionContainer} from '../section-container/styles';
 import {title as Heading} from '../heading/styles';
 
+// eslint-disable-next-line no-unused-vars
+const menuVisibility = (theme)=> css`
+    visibility: visible;
+    opacity: 1;
+`;
+
 export const Container = styled.h1`
-    ${({theme})=>css`
+    ${({theme, visible})=>css`
         position: fixed;
         top: 0;
         right: 0;
@@ -13,6 +19,7 @@ export const Container = styled.h1`
         background-color: ${theme.colors.white};
         color: ${theme.colors.black};
         border-bottom: ${theme.colors.mediumGrey};
+        transition: all 500ms ease-in-out;
 
         & ${SectionContainer} {
             padding-top: 0;
@@ -24,19 +31,21 @@ export const Container = styled.h1`
         }
         @media ${theme.media.tablet} {
             height: 100vh;
+            visibility: hidden;
+            opacity: 0;
+            ${visible && menuVisibility(theme)};
 
             & ${SectionContainer} {
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr;
-                height: 100vh;
                 align-items: center;
                 overflow-y: auto;
             }
             & ${Heading} {
                 padding-bottom: ${theme.spacing.large};
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
             }
         }
     `}
@@ -59,6 +68,27 @@ export const MenuContainer = styled.div`
 
 export const Button = styled.div`
     ${({theme})=>css`
+        z-index: 6;
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        width: 4rem;
+        height: 4rem;
+        display: none;
+        background: ${theme.colors.primary};
+        color: ${theme.colors.white};
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+        > svg {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
 
+        @media ${theme.media.tablet} {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
     `}
 `;
