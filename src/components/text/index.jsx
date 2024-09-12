@@ -8,7 +8,7 @@ import * as Styled from './styles';
 export const Text = ({children}) =>{
     return (
         <ThemeProvider theme={theme}>
-            <Styled.textComp>{children}</Styled.textComp>
+            <Styled.TextComp dangerouslySetInnerHTML={{__html:children}}/>
         </ThemeProvider>
     )
 }
