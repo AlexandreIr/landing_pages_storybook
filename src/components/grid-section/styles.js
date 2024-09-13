@@ -5,6 +5,9 @@ export const Container = styled.div`
     ${({theme})=>css`
         margin: ${theme.spacing.large};
     `}
+    ${TitleContainer} {
+        padding-bottom: 0;
+    }
 `;
 export const Grid = styled.div`
     ${({theme})=>css`

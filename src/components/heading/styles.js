@@ -23,18 +23,6 @@ const titleCase = (upperCase) => css`
     text-transform: ${upperCase?'uppercase':'none'};
 `
 
-const titleColor = {
-    primary : (theme) => css`color: ${theme.colors.primary}`,
-    secondary : (theme) => css`color: ${theme.colors.secondary}`,
-    white : (theme) => css`color: ${theme.colors.white}`,
-    black : (theme) => css`color: ${theme.colors.black}`,
-}
-const titleBgColor = {
-    primary:(theme)=>css`background-color: ${theme.colors.primary}`,
-    secondary:(theme)=>css`background-color: ${theme.colors.secondary}`,
-    white:(theme)=>css`background-color: ${theme.colors.white}`,
-    black:(theme)=>css`background-color: ${theme.colors.black}`,
-}
 const titleFont = {
     default:(theme)=>css`font-family: ${theme.font.family.default}`,
     secondary:(theme)=>css`font-family: ${theme.font.family.secondary}`,
