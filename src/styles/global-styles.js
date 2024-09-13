@@ -28,8 +28,4 @@ export const GlobalStyles = createGlobalStyle`
         padding: ${({theme})=>theme.spacing.normal};
     }
 
-    a{
-        text-decoration: none;
-    }
-
 `
