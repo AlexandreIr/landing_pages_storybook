@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components';
+import { TextComp } from '../text/styles';
 
 export const Container = styled.div`
     ${({theme})=>css`
@@ -16,5 +17,11 @@ export const Container = styled.div`
 export const Html = styled.div`
     ${({theme})=>css`
         margin: ${theme.spacing.xhuge} 0;
+
+        @media ${theme.media.smallPhone}{
+            ${TextComp}{
+                font-size: 1.2rem;
+            }
+        }
     `}
 `;

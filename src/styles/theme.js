@@ -14,7 +14,8 @@ export const theme = {
             fourth:"'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif"
         },
         size:{
-            xsmall:'.8rem',
+            xxsmall:'.8rem',
+            xsmall:'1rem',
             small:'1.6rem',
             normal:'2.4rem',
             large:'3.2rem',

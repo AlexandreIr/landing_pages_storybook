@@ -1,13 +1,16 @@
 import styled, { css } from 'styled-components';
 import {title as TitleContainer} from '../heading/styles';
+import {TextComp} from '../text/styles';
 
 export const Container = styled.div`
     ${({theme})=>css`
-        margin: ${theme.spacing.large};
+        margin: ${theme.spacing.large} 0;
+
+        @media ${theme.media.smallPhone}{
+            margin: ${theme.spacing.normal} 0;
+            overflow-x: hidden;
+        }
     `}
-    ${TitleContainer} {
-        padding-bottom: 0;
-    }
 `;
 export const Grid = styled.div`
     ${({theme})=>css`
@@ -35,6 +38,12 @@ export const GridElement = styled.div`
             top: -1rem;
             left: -4rem;
             transform: rotate(5deg);
+        }
+
+        @media ${theme.media.smallPhone}{
+            ${TextComp}{
+                font-size: 1.4rem;
+            } 
         }
     `}
 `;

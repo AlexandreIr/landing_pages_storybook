@@ -12,11 +12,11 @@ export const GridSection = ({title, description, grid=[], background=false}) =>{
         <ThemeProvider theme={theme}>
             <SectionBackgroud background={background}>
                 <Styled.Container>
-                    <Heading upperCase size='huge'>{title}</Heading>
+                    <Heading upperCase size='huge' as='h2'>{title}</Heading>
                     <Text>{description}</Text>
                     <Styled.Grid>{grid.map(g=>(
                         <Styled.GridElement key={g.title}>
-                            <Heading size='normal'>{g.title}</Heading>
+                            <Heading size='normal' as='h3'>{g.title}</Heading>
                             <Text>{g.description}</Text>
                         </Styled.GridElement>
                     ))}</Styled.Grid>
