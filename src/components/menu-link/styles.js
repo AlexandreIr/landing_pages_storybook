@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 
 export const Menu = styled.a`
     ${({theme})=>css`
-        color: ${theme.colors.black};
         font-size: ${theme.font.size.small};
         text-decoration: none;
         display: block;

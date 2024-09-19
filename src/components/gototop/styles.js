@@ -6,6 +6,7 @@ export const Container = styled.a`
         width: 4rem;
         color: ${theme.colors.secondary};
         background-color: ${theme.colors.primary};
+        border-radius: 50%;
         border-radius: 1rem;
         display: flex;
         align-items: center;

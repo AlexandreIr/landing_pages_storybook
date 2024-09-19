@@ -4,10 +4,10 @@ export default {
     title: 'Footer',
     component: Footer,
     args:{
-        children:`<p>Todos os direitos reservados a <a href="#">Alexandre Fernandes</a></p>`,
+        txt:`<p>Todos os direitos reservados a <a href="#">Alexandre Fernandes</a></p>`,
     },
     argTypes:{
-        children:{type:'string'},
+        txt:{type:'string'},
     },
 }
 export const Template = (args) => {

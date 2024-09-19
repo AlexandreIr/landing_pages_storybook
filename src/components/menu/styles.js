@@ -16,10 +16,11 @@ export const Container = styled.h1`
         left: 0;
         bottom: 0;
         z-index: 5;
-        background-color: ${theme.colors.white};
+        max-height:10rem;
         color: ${theme.colors.black};
         border-bottom: ${theme.colors.mediumGrey};
         transition: all 500ms ease-in-out;
+        height: 5rem;
 
         & ${SectionContainer} {
             padding-top: 0;
@@ -68,15 +69,13 @@ export const MenuContainer = styled.div`
 
 export const Button = styled.div`
     ${({theme})=>css`
-        z-index: 6;
+        z-index: 5;
         position: fixed;
         top: 2rem;
         right: 2rem;
         width: 4rem;
         height: 4rem;
         display: none;
-        background: ${theme.colors.primary};
-        color: ${theme.colors.white};
         border: none;
         border-radius: 15px;
         cursor: pointer;

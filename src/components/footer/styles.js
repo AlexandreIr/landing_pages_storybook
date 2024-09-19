@@ -1,10 +1,16 @@
 import styled, { css } from 'styled-components';
+import { TextComp } from '../text/styles';
 
 export const Container = styled.div`
     ${({theme})=>css`
+        position: static;
+        width: 100%;
+        bottom: 0;
+        text-align: center;
         padding: ${theme.spacing.xsmall} 0;
-        p{
-            font-size: ${theme.font.size.xsmall};
+        
+        ${TextComp}{
+            font-size: ${theme.font.size.xxsmall};
         }
         a{
             color: inherit;

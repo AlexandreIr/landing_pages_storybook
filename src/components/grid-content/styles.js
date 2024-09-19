@@ -4,7 +4,8 @@ import { TextComp } from '../text/styles';
 export const Container = styled.div`
     ${({theme})=>css`
         text-align: center;
-        max-width: 580px;
+        max-width: 58rem;
+        align-items: center;
         margin: 0 auto;
 
         a{

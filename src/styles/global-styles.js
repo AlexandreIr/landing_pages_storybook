@@ -6,10 +6,10 @@ export const GlobalStyles = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        scroll-behavior: smooth;
     }
-
+    
     html{
+        scroll-behavior: smooth;
         font-size: 62.5%;
     }
     body{
@@ -23,7 +23,6 @@ export const GlobalStyles = createGlobalStyle`
     p{
         margin: ${({theme})=>theme.spacing.normal};
     }
-
     ul, ol {
         margin: ${({theme})=>theme.spacing.normal};
         padding: ${({theme})=>theme.spacing.normal};

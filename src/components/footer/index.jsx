@@ -5,16 +5,16 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from '../../styles/theme';
 import { Text } from '../text';
 
-export const Footer = ({children}) =>{
+export const Footer = ({txt}) =>{
     return(
         <ThemeProvider theme={theme}>
             <Styled.Container>
-                <Text>{children}</Text> 
+                <Text>{txt}</Text> 
             </Styled.Container>
         </ThemeProvider>
     )
 };
 
 Footer.propTypes={
-    children: P.node.isRequired,
+    txt: P.string.isRequired,
 }
