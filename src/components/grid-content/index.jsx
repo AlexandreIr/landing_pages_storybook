@@ -12,10 +12,10 @@ export const GridContent = ({title, html, background=false}) =>{
         <ThemeProvider theme={theme}>
             <SectionBackgroud background={background}>
                 <Styled.Container>
-                    <Heading upperCase as='h2'>{title}</Heading>
-                    <Styled.Html>
-                        <Text>{html}</Text>
-                    </Styled.Html>
+                        <Heading upperCase as='h2'>{title}</Heading>
+                        <Styled.Html>
+                            <Text>{html}</Text>
+                        </Styled.Html>
                 </Styled.Container>
             </SectionBackgroud>
         </ThemeProvider>

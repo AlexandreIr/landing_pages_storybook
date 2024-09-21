@@ -7,7 +7,12 @@ export const Menu = styled.a`
         display: block;
         padding: ${theme.spacing.small};
         position: relative;
-
+        color: white;
+        
+        &:hover{
+            color:${theme.colors.secondary};
+        }
+        
         &::after{
             content: '';
             position: absolute;

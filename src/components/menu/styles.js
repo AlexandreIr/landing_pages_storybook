@@ -16,6 +16,7 @@ export const Container = styled.h1`
         left: 0;
         bottom: 0;
         z-index: 5;
+        background-color: ${theme.colors.primary};
         max-height:10rem;
         color: ${theme.colors.black};
         border-bottom: ${theme.colors.mediumGrey};
@@ -40,6 +41,7 @@ export const Container = styled.h1`
                 display: grid;
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr;
+                background-color: ${theme.colors.primary};
                 align-items: center;
                 overflow-y: auto;
             }
@@ -77,7 +79,8 @@ export const Button = styled.div`
         height: 4rem;
         display: none;
         border: none;
-        border-radius: 15px;
+        background-color: ${theme.colors.black};
+        color: ${theme.colors.white};
         cursor: pointer;
         > svg {
             width: 2.5rem;

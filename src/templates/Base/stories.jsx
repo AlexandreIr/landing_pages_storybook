@@ -7,7 +7,7 @@ import  imageMock from '../../components/grid-image/mock';
 
 export const childrenMock = {
     children:(
-        <div style={{marginTop:'5rem'}}>
+        <div>
             <GridContent {...GridMock} />
             <GridContent {...GridMock} background />
             <GridContent {...GridMock} />

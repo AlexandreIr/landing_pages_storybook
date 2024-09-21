@@ -7,10 +7,10 @@ export const Container = styled.div`
         width: 100%;
         bottom: 0;
         text-align: center;
-        padding: ${theme.spacing.xsmall} 0;
+        padding: ${theme.spacing.small} 0;
         
         ${TextComp}{
-            font-size: ${theme.font.size.xxsmall};
+            font-size: ${theme.font.size.small};
         }
         a{
             color: inherit;
